@@ -1,2 +1,1 @@
-# finsh the first chapter
-# page 70
+# page 86 

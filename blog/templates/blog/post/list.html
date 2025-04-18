@@ -15,5 +15,15 @@
         </p>
         {{ post.body|truncatewords:30|linebreaks }}
     {% endfor %}
-    {% include "pagination.html" with page=posts %}
+    {% include "pagination.html" with page=page_obj %}
+    <!--  
+    Django لما تستخدم ListView، بيبعت مجموعة متغيرات للـ template، من ضمنهم:
+
+    page_obj: ده المتغير اللي فيه الصفحة الحالية (مثلاً الصفحة رقم 2 من النتائج).
+
+    paginator: ده فيه معلومات عن كل الصفحات (عدد الصفحات، إذا كان في صفحات تانية أو لأ...).
+
+    فعلشان الـ Pagination يشتغل صح، لازم في ملف post/list.html (أو أي Template بتعرض فيه البوستات) تستخدم المتغير page_obj. 
+ 
+    -->
 {% endblock %}

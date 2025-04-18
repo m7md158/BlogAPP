@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual Environments
+env/
+venv/
+
+# Django secret/config files
+.env
+
+# SQLite database
+db.sqlite3
+
+# VSCode and other IDEs
+.vscode/
+.idea/
+
+# Migrations (اختياري لو عايز تتجاهلهم)
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# Static and media files (لو بتجمعهم في نفس المجلد)
+staticfiles/
+media/
