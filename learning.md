@@ -44,6 +44,10 @@
       - We will add SMTP configuration settings to the project
       - python -m pip install python-decouple==3.8
 
+   - Creating a comment system
+      
+
+
    - Django forms to share posts and send email recommendations via Simple Mail Transfer Protocol (SMTP)
 
    
