@@ -50,4 +50,12 @@
 
    - Django forms to share posts and send email recommendations via Simple Mail Transfer Protocol (SMTP)
 
-   
+# -----------------------------------------
+
+# chapter3
+
+   - Implementing tagging with django-taggit
+      python -m pip install django-taggit==5.0.1  -> installed_app
+
+   - Retrieving posts by similarity
+   - Creating custom template tags and filters

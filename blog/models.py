@@ -2,7 +2,7 @@ from django.db import models
 from django.urls import reverse
 from django.utils import timezone
 from django.conf import settings
-
+from taggit.managers import TaggableManager
 
 class PublishedManager(models.Manager):
     def get_queryset(self):
@@ -35,6 +35,7 @@ class Post(models.Model):
         default= Status.DRAFT
                               
     )
+    tags = TaggableManager()
     
     objects = models.Manager() # The default manager.
     published = PublishedManager() # Our custom manager.
@@ -76,3 +77,4 @@ class Comment(models.Model):
         
         def __str__(self):
             return f"Comment by {self.name} on {self.post}"
+        
