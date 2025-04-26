@@ -58,4 +58,9 @@
       python -m pip install django-taggit==5.0.1  -> installed_app
 
    - Retrieving posts by similarity
-   - Creating custom template tags and filters
+   - Creating custom template tags
+   - Markdown is a plain-text formatting syntax that is very simple to use, and it’s intended to be
+         converted into HTML 
+
+   - Implementing custom template filters
+   - sitemap
